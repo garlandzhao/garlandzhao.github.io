@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2701195d76.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Garland Zhao's Portfolio</title>
+  </head>
+  <body>
+    <nav id="nav-container">
+      <input type="checkbox" id="nav-toggle" />
+      <label for="nav-toggle">
+        <i class="fa-solid fa-bars fa-xl" id="nav-icon"></i>
+      </label>
+      <div id="nav-items">
+        <a class="nav-link" href="#top">Home</a>
+        <a class="nav-link" href="#about-me-page">About Me</a>
+        <a class="nav-link" href="#projects-page">Projects</a>
+        <a class="nav-link" href="#contacts-page">Contacts</a>
+      </div>
+    </nav>
+    <div class="website-pages">
+      <div class="website-page" id="home-page">
+        <div class="content" id="home-page-content">
+          <h1>Hello, I am <span class="name">Garland Zhao</span></h1>
+          <h2>I enjoy working on new projects and analyzing data.</h2>
+          <p>
+            I am an aspiring data analyst who loves learning about new
+            technologies and expanding his skill set.
+          </p>
+          <a href="#projects-page" class="buttons"> View Projects </a>
+        </div>
+      </div>
+      <div class="website-page" id="about-me-page">
+        <div class="content" id="about-me-content">
+          <h2>About Me</h2>
+          <div id="about-me-body">
+            <p>
+              Hello, I am <span class="text-emphasis">Garland Zhao</span>. I am
+              a recent graduate of Cal Poly Pomona. I graduated with a B.S. in
+              Business Administration with a focus in Computer Information
+              Systems.
+            </p>
+            <p>
+              I create and work on new projects in my spare time. My data
+              analytics projects are often created based on my interests or
+              desire to improve my abilities. I frequently employ a variety of
+              different programming languages and tools to complete my projects.
+              For data analytics, I use
+              <span class="text-emphasis">Python</span>,
+              <span class="text-emphasis">SQL</span>, and
+              <span class="text-emphasis">Excel</span>. And for visualizations,
+              I use Python libraries and
+              <span class="text-emphasis">Tableau</span>.
+            </p>
+            <div id="skills-table">
+              <div class="skills-list">
+                <h4>Languages</h4>
+                <ul>
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <div class="skills-list">
+                <h4>Tools</h4>
+                <ul>
+                  <li>Microsoft Excel</li>
+                  <li>Tableau</li>
+                  <li>SQL Server Management Studio (SSMS)</li>
+                  <li>Spark/PySpark</li>
+                </ul>
+              </div>
+            </div>
+            <div id="resume-container">
+              <a
+                href="Garland Zhao Resume.pdf"
+                class="buttons"
+                id="resume_button"
+                target="_blank"
+                >Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="website-page" id="projects-page">
+        <h2>Projects</h2>
+        <div id="projects-list">
+          <div class="project-card grow-element">
+            <a
+              href="https://github.com/garlandzhao/California-AQI-Project"
+              target="_blank"
+            >
+              <h3>California AQI Project</h3>
+              <img
+                class="project-card-img"
+                src="imgs/ca-aqi-project.png"
+                alt="California AQI Project Image"
+              />
+            </a>
+            <p class="tag">Python</p>
+            <p class="tag">Excel</p>
+            <p class="tag">Tableau</p>
+            <p>
+              The purpose of this project was to forecast and display the air
+              quality index (AQI) data of California. This project was created
+              with Python, Excel, and Tableau. The forecasting of this project
+              was done with the time series library, Darts. The historical and
+              forecasted AQI data is visualized with Tableau.
+            </p>
+          </div>
+          <div class="project-card grow-element">
+            <a
+              href="https://github.com/garlandzhao/Discord-Timer-Bot-Project"
+              target="_blank"
+            >
+              <h3>Discord Timer Bot</h3>
+              <img
+                class="project-card-img"
+                src="imgs/discord-timer-project.png"
+                alt="Discord Timer Project Image"
+              />
+            </a>
+            <p class="tag">Python</p>
+            <p>
+              The purpose of this project was to create a discord bot that could
+              serve as a timer. The bot includes various useful features such as
+              the ability to display live countdowns and multiple timers. The
+              bot was created with various different libraries such as discord,
+              asyncio, and pytz.
+            </p>
+          </div>
+          <div class="project-card grow-element">
+            <a
+              href="https://github.com/garlandzhao/Adidas-Sales"
+              target="_blank"
+            >
+              <h3>Adidas Sales</h3>
+              <img
+                class="project-card-img"
+                src="imgs/adidas-project.png"
+                alt="Adidas Sales Dashboard Image"
+              />
+            </a>
+            <p class="tag">SQL</p>
+            <p class="tag">Tableau</p>
+            <p>
+              The purpose of this project was to query the Adidas sales data and
+              to display it in an easy to read manner. The sales data was
+              queried based on common business questions. A dashboard was
+              created in Tableau to help display the data. The dashboard is
+              dynamic and can be used to display monthly data.
+            </p>
+          </div>
+          <div class="project-card grow-element">
+            <a
+              href="https://github.com/garlandzhao/Seattle-Public-Library-Checkouts-2022"
+              target="_blank"
+            >
+              <h3>Seattle Public Library Checkouts 2022</h3>
+              <img
+                class="project-card-img"
+                src="imgs/seattle-library-project.png"
+                alt="Seattle Public Library Project Image"
+              />
+            </a>
+            <p class="tag">Python</p>
+            <p class="tag">SQL</p>
+            <p>
+              The purpose of this project was to query and analyze the Seattle
+              Public Library data. SQL and Python were used congruently to
+              generate insights. SQL was used to house the data and answer
+              common questions. Python was used for more sophisticated
+              analyzations and visualizations.
+            </p>
+          </div>
+          <div class="project-card grow-element">
+            <a
+              href="https://github.com/garlandzhao/Climate-Tweets-Analysis"
+              target="_blank"
+            >
+              <h3>Climate Tweets Analysis</h3>
+              <img
+                class="project-card-img"
+                src="imgs/climate-tweets-project.png"
+                alt="Climate Tweets Analysis Image"
+              />
+            </a>
+            <p class="tag">Python</p>
+            <p>
+              The purpose of this project was to analyze tweets concerning
+              climate change. Tweets were gathered using the Twitter API v2 and
+              analyzed based on their sentiment. The results of this project
+              were visualized in various ways such as pie charts, bar charts,
+              and word clouds.
+            </p>
+          </div>
+          <div class="project-card grow-element">
+            <a
+              href="https://github.com/garlandzhao/Fake-News-Classifier-Project"
+              target="_blank"
+            >
+              <h3>Fake News Classifier</h3>
+              <img
+                class="project-card-img"
+                src="imgs/fake-news-project.png"
+                alt="Fake News Classifier Image"
+              />
+            </a>
+            <p class="tag">Python</p>
+            <p>
+              The purpose of this project was to create a classification model
+              that would be able to detect which news articles are fake or not
+              with a high level of accuracy. This project compared 3 different
+              classification models: random forest, multinomial naive bayes, and
+              k nearest neighbors.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="website-page" id="contacts-page">
+        <h2>Contact Me</h2>
+        <p id="email-address">Email: zhao.garland@outlook.com</p>
+        <a class="contact-icon" href="mailto:zhao.garland@outlook.com"
+          ><p class="buttons" id="contact-button">Send Email</p></a
+        >
+        <div id="contact-links">
+          <a
+            class="contact-link"
+            href="https://www.linkedin.com/in/garland-zhao-0584b525b/"
+            target="_blank"
+          >
+            <p>Linkedin</p>
+          </a>
+          <a
+            class="contact-link"
+            href="https://github.com/garlandzhao"
+            target="_blank"
+            ><p>Github</p>
+          </a>
+          <a
+            class="contact-link"
+            href="https://public.tableau.com/app/profile/garland.zhao"
+            target="_blank"
+          >
+            <p>Tableau</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
