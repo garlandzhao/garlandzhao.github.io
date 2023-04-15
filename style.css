@@ -241,6 +241,7 @@ img {
   height: 200px;
   text-align: center;
   border: 1px solid #adadad;
+  object-fit: contain;
 }
 
 .project-card p {
